@@ -1,0 +1,50 @@
+{
+  "banner": {
+    "logoName": "Brand Name",
+    "content": {
+      "title": "Success By Design",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. At incidunt eveniet expedita est vel earum minus dolorem eius dolorum nobis aut placeat quia nulla enim repellat molestias ut, neque odio?"
+    }
+  },
+  "about": {
+    "heading": "About Us",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex dolorem illum esciunt nihil minus, temporibus ratione animi, provident vel delectus accusamus voluptas magnam rem asperiores eum quia odio nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quia vero voluptate suscipit veniam vel perferendis ipsum odio ut nam! Asperiores corporis est dolorem eos ipsam iusto suscipit rerum magni!"
+  },
+  "services": {
+    "heading": "Our Services",
+    "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores inventore laudantium consectetur ipsa eveniet mollitia magni sequi omnis, ducimus ullam, unde odio earum quaerat accusantium animi quisquam itaque error.",
+    "boxes": {
+      "left": "Design",
+      "middle": "Development",
+      "right": "Branding"
+    }
+  },
+  "technology": {
+    "heading": "We use cutting edge technology",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis consectetur laboriosam nostrum minus ipsa aut pariatur, adipisci vero nemo, deserunt repellendus quos. Deserunt blanditiis dolores atque. Optio, eos magni?"
+  },
+  "clientInfo": {
+    "title": "Our Client",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores inventore laudantium consectetur ipsa eveniet mollitia magni sequi omnis, ducimus ullam, unde odio earum quaerat accusantium animi quisquam itaque error."
+  },
+  "testimonials": {
+    "title": "What Our Client says",
+    "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores inventore laudantium consectetur ipsa eveniet mollitia magni sequi omnis, ducimus ullam, unde odio earum quaerat accusantium animi quisquam itaque error.",
+    "commentOwner": "Someone Famous"
+  },
+  "contactUs": {
+    "title": "Contact us",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores inventore laudantium consectetur ipsa eveniet mollitia magni sequi omnis, ducimus ullam, unde odio earum quaerat accusantium animi quisquam itaque error."
+  },
+  "commentForm": {
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "mobileNo": "Mobile No.",
+    "textAreaPlaceholder": "Write your message here",
+    "sendBtnText": "Send"
+  },
+  "footer": {
+    "developedBy": "Design & Developed By Zoomlex",
+    "followUs": "Follow us on :"
+  }
+}

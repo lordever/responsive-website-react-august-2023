@@ -1,0 +1,84 @@
+@import '@styles/variables.less';
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #3475ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 025;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+  }
+
+  @media (max-width: @max-width) {
+    header {
+      padding: 20px 50px
+    }
+  }
+}
+
+.bannerContent {
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+
+  h2 {
+    color: #fff;
+    font-size: 60px;
+  }
+
+  p {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  @media (max-width: @max-width) {
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.bannerLogo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.bannerToggle {
+  position: relative;
+  width: 36px;
+  height: 28px;
+  background: url("@{image-path}/toggle.png");
+  background-size: cover;
+  cursor: pointer;
+}
+

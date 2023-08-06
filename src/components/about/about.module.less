@@ -1,0 +1,31 @@
+@import '@styles/variables.less';
+
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+
+  @media (max-width: @max-width) {
+    flex-direction: column;
+  }
+}
+
+.contentBx {
+  background: #162c3b;
+  padding: 100px;
+  width: 50%;
+
+  @media (max-width: @max-width) {
+    width: 100%;
+  }
+}
+
+.imgBx {
+  background: url("@{image-path}/window.jpg") center;
+  background-size: cover;
+  width: 50%;
+
+  @media (max-width: @max-width) {
+    width: 100%;
+  }
+}

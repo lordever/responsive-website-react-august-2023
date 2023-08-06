@@ -1,0 +1,36 @@
+@import '@styles/variables.less';
+
+.footer {
+  background: #162c3b;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 10px;
+
+        img {
+          filter: invert(1);
+          max-width: 20px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @max-width) {
+    padding: 20px 50px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}

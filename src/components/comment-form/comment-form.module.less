@@ -1,0 +1,84 @@
+@import '@styles/variables.less';
+
+.commentForm {
+  position: relative;
+  width: 100%;
+  display: flex;
+
+  @media (max-width: @max-width) {
+    flex-direction: column;
+  }
+}
+
+.contentBx {
+  background: #162c3b;
+  padding: 100px;
+  width: 50%;
+
+  background: url("@{image-path}/red.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: @max-width) {
+    width: 100%;
+  }
+}
+
+.inputBx {
+  margin-bottom: 40px;
+
+  input {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    min-height: 150px;
+    border-bottom: 2px solid #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  input[type="submit"] {
+    width: 150px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    font-weight: 400;
+  }
+}
+
+.imgBx {
+  background: url("@{image-path}/bg2.jpg") !important;
+  background-size: cover !important;
+  background-position: center;
+  width: 50%;
+
+  @media (max-width: @max-width) {
+    width: 100%;
+  }
+}

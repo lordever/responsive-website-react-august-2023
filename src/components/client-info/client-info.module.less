@@ -1,0 +1,34 @@
+@import '@styles/variables.less';
+
+.client {
+  background: #162c3b;
+  padding: 100px;
+  text-align: center;
+
+  @media (max-width: @max-width) {
+    padding: 50px;
+  }
+}
+
+.imgBx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+
+  img {
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0.25;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: @max-width) {
+    justify-content: center;
+  }
+}

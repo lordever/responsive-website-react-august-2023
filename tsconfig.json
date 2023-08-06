@@ -1,8 +1,16 @@
 {
-    "compilerOptions": {
-        "jsx": "react-jsx",
-    },
-    "includes": [
-        "./less.d.ts"
-    ]
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  },
+  "includes": [
+    "./less.d.ts"
+  ]
 }

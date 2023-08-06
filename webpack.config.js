@@ -1,14 +1,13 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
-const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
-    entry: "./src/App.tsx",
+    entry: "./src/index.tsx",
+    devtool: 'inline-source-map',
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "build"),
+        assetModuleFilename: 'images/[hash][ext][query]'
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -18,6 +17,11 @@ module.exports = {
     module: {
         // exclude node_modules
         rules: [
+            //static resources (images)
+            {
+                test: /\.(png|jpe?g|gif|jp2|webp)$/,
+                type: 'asset/resource'
+            },
             // `js` and `jsx` files are parsed using `babel`
             {
                 test: /\.(js|jsx)$/,
@@ -39,12 +43,22 @@ module.exports = {
                         loader: "css-loader",
                         options: {
                             sourceMap: true,
-                            modules: true,
+                            modules: {
+                                localIdentName: "[name]__[local]--[hash:base64:5]",
+                            },
                             importLoaders: 1,
                         }
                     },
                     {
-                        loader: "less-loader"
+                        loader: "less-loader",
+                        options: {
+                            lessOptions: {
+                                modifyVars: {
+                                    // Add your custom Less variables here
+                                    '@image-path': `"${path.resolve(__dirname, 'assets/images/')}"`,
+                                },
+                            },
+                        },
                     }
                 ]
             }
@@ -53,6 +67,10 @@ module.exports = {
     // pass all js files through Babel
     resolve: {
         extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
+        alias: {
+            '@images': path.resolve(__dirname, 'assets/images'),
+            '@styles': path.resolve(__dirname, 'src/common/styles')
+        }
     },
     devServer: {
         static: {

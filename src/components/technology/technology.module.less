@@ -1,0 +1,34 @@
+@import '@styles/variables.less';
+
+.technology {
+  background: #3f8ffc;
+  width: 100%;
+  display: flex;
+  padding: 300px 100px 100px;
+  margin-top: -300px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: @max-width) {
+    padding: 300px 50px 50px;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.contentBx {
+  max-width: 800px;
+}
+
+.imgBx {
+  max-width: 250px;
+
+  img {
+    max-width: 100%;
+  }
+
+  @media (max-width: @max-width) {
+    margin-top: 40px;
+    max-width: 250px;
+  }
+}

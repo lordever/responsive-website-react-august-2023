@@ -1,0 +1,56 @@
+@import '@styles/variables.less';
+
+.testimonials {
+  position: relative;
+  padding: 100px;
+  background: #12222d;
+  text-align: center;
+
+  @media (max-width: @max-width) {
+    padding: 50px;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+
+  @media (max-width: @max-width) {
+    justify-content: center;
+  }
+}
+
+.contentBx {
+  background: #fff;
+  padding: 60px 50px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  p {
+    font-style: italic;
+  }
+
+  h3 {
+    width: 100%;
+    text-align: end;
+    font-weight: 500;
+    color: #3f8ffc;
+  }
+
+  @media (max-width: @max-width) {
+    padding: 60px 40px;
+    max-width: 550px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
